@@ -20,8 +20,8 @@
 //   isMarried: false
 // };
 
-// console.log(obj.age);
-// // console.log(obj['age']);
+// // console.log(obj.age);
+// console.log(obj['age']);
 
 // let arr = ['plumb.png', 'orange.jpg', 'apple.bmp', {}, [], 'string'];
 // //массив частный слуйчай обьекта, не отдельный тип данных
