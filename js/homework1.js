@@ -67,4 +67,5 @@ if (personalMovieDB.count <= 10) {
   console.log('Произошла ошибка');
 }
 
-console.log(personalMovieDB);
+// console.log(personalMovieDB);
+
