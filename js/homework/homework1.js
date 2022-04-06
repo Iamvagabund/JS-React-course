@@ -48,7 +48,7 @@ for (let i = 0; i < 2; i++) {
   const questionFilm = prompt('Один из последних просмотренных фильмов?', ''),
         questionRate = +prompt('На сколько оцените его?', '');
 
-  if (questionFilm != null && questionRate !== null && questionFilm != '' && questionRate != '' && questionFilm.length < 50) {
+  if (questionFilm != null && questionRate != null && questionFilm != '' && questionRate != '' && questionFilm.length < 50) {
     personalMovieDB.movies[questionFilm] = questionRate;
     console.log('DONE');
   } else {
