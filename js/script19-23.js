@@ -75,9 +75,9 @@
 // // arr.push(10); // удаляет в конце элемент
 // // console.log(arr);
 
-arr.forEach(function(items, i, arr) {
-  console.log(`${i}: ${items}: in array ${arr}`);
-});
+// arr.forEach(function(items, i, arr) {
+//   console.log(`${i}: ${items}: in array ${arr}`);
+// });
 
 // for (let i=0; i < arr.length; i++) {
 //   console.log(arr[i]);
@@ -115,59 +115,60 @@ function copy(mainObj) {
   return objCopy;
 }
 
-const obj = {
-  a: 6,
-  b: 1,
-  c: {
-    y: 3,
-    x: 2
-  }
-};
+// const obj = {
+//   a: 6,
+//   b: 1,
+//   c: {
+//     y: 3,
+//     x: 2
+//   }
+// };
 
 // const newObj = copy(obj);
 // newObj.a = 10;
 // console.log(obj);
 // console.log(newObj);
 
-const add = {
-  d: 15,
-  r: 321
-};
+// const add = {
+//   d: 15,
+//   r: 321
+// };
 
 // console.log(Object.assign(obj, add));
 
-const cloneAdd = Object.assign({}, add);
-cloneAdd.d = 255;
-console.log(cloneAdd);
-console.log(add);
+// const cloneAdd = Object.assign({}, add);
+// cloneAdd.d = 255;
+// console.log(cloneAdd);
+// console.log(add);
 
 
-const oldArray = ['a', 'b', 'c'];
-const newArray = oldArray.slice();
-newArray.push('d');
-console.log(oldArray);
-console.log(newArray);
+// const oldArray = ['a', 'b', 'c'];
+// const newArray = oldArray.slice();
+// newArray.push('d');
+// console.log(oldArray);
+// console.log(newArray);
 
-const video = ['youtube', 'vimeo', 'rutube'],
-      blogs = ['wordpress', 'livejournal', 'blogger'],
-      internet = [...video, ...blogs, 'vk', 'facebook'];
-console.log(internet);
+// const video = ['youtube', 'vimeo', 'rutube'],
+//       blogs = ['wordpress', 'livejournal', 'blogger'],
+//       internet = [...video, ...blogs, 'vk', 'facebook'];
+// console.log(internet);
 
-function log(a, b, c) {
-  console.log(a);
-  console.log(b);
-  console.log(c);
-}
+// function log(a, b, c) {
+//   console.log(a);
+//   console.log(b);
+//   console.log(c);
+// }
 
 const numm = [5, 3, 9];
-log(...numm);
+console.log(...numm);
 
-const arrr = ['a', 'b', 'c'];
-const newArrr = [...arrr];
+// const arrr = ['a', 'b', 'c'];
+// const newArrr = [...arrr];
+// console.log(newArrr);
 
-const q = {
-  one: 1,
-  two: 2
-};
+// const q = {
+//   one: 1,
+//   two: 2
+// };
 
-const newQ = {...q};
+// const newQ = {...q};
