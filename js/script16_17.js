@@ -8,7 +8,7 @@ function showFirstMesage(text) {
   console.log(num);
 }
 
-showFirstMesage('Hello'); // такие функции можем вызвать в любом месте. На подобе var существует до того, как обьявлена. Functon declaration
+showFirstMesage('Hello');//такие функции можем вызвать только тогда, когда до неё доходит код. можем вызвать в любом месте. На подобе var существует до того, как обьявлена. Functon declaration
 console.log(num); 
 
 function calc(a, b) {
@@ -31,7 +31,7 @@ const logger = function() {
   console.log('Hello');
 };
 
-logger(); // такие функции можем вызвать только тогда, когда до неё доходит код, можно вызвать только после обьявления. Functon expression
+logger(); // можно вызвать только после обьявления. Functon expression
 
 
 function calc(a, b) {

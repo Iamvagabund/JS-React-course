@@ -4,7 +4,7 @@ const box = document.getElementById('box'),
       btns = document.getElementsByTagName('button'), // получаем HTMLCollections это псевдомассив, к псевдомассиву нельзя обратится и поменять кнопку. он не содержит методов, нужно обращаться только к элемменту. 
 // const btns = document.getElementsByTagName('button')[1]; // получаем вторую кнопку
       circles = document.getElementsByClassName('circle'), //получаем HTMLCollections это псевдомассив, к псевдомассиву нельзя обратится и поменять кнопку. он не содержит методов, нужно обращаться только к элемменту. 
-      wrapper = document.querySelector('.wrapper');
+      wrapper = document.querySelector('.wrapper'),
       hearts = wrapper.querySelectorAll('.heart'), //это Nodelist у него есть метод forEach
       oneHeart = wrapper.querySelector('.heart'); // первый элемент берёт
 console.dir(box);
@@ -34,7 +34,7 @@ document.body.append(div); // берём тег body и в конец добав
 
 // document.querySelector('.wrapper').append(div); // если не используем часто, а только один раз то можно сразу делать и не создавать переменную отдельно.
 
-wrapper.append(div);
+wrapper.append(div); // добвить в конец
 // wrapper.appendChild(div); // старая запись
 
 wrapper.prepend(div); // перед элементов

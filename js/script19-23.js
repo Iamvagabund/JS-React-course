@@ -40,10 +40,10 @@
 //   }
 // };
 
-// console.log(Object.keys(options).length);
+// console.log(Object.keys(options).length); // узнаем сколько ключей в обьекте
 // options.makeTest();
 
-// const {border, bg} = options.colors;
+// const {border, bg} = options.colors; // деструктаризация обьекта. вытаскиваем нужные значение с обьекта обьекта
 // console.log(border);
 // // console.log(options.colors.bg);
 
@@ -88,14 +88,14 @@
 // }
 
 const str = prompt("", '');
-const products = str.split(', ');
+const products = str.split(', '); // строку когда ввели слова через запятую превращает в массив
 products.sort();
 // console.log(products);
-console.log(products.join('; '));
+console.log(products.join('; ')); // массив склеил в строку через двоеточие
 
 
 const arrNumberSort = [1, 21, 12, 4, 5, 25];
-arrNumberSort.sort(compareNum);
+arrNumberSort.sort(compareNum); // для сортировки чисел, которые состоят из двух (и больше) цифр по типу 10 и больше
 
 function compareNum(a, b) {
   return a - b;
@@ -134,23 +134,23 @@ function copy(mainObj) {
 //   r: 321
 // };
 
-// console.log(Object.assign(obj, add));
+// console.log(Object.assign(obj, add)); //соединение обьектов в один
 
-// const cloneAdd = Object.assign({}, add);
+// const cloneAdd = Object.assign({}, add); // методом соединения пустого обьекта мы создали копию второго обьекта
 // cloneAdd.d = 255;
 // console.log(cloneAdd);
 // console.log(add);
 
 
 // const oldArray = ['a', 'b', 'c'];
-// const newArray = oldArray.slice();
+// const newArray = oldArray.slice(); // создаем копию массива (по сути обьединяем пустой массив с тем, над которым нужно сделать копию)
 // newArray.push('d');
 // console.log(oldArray);
 // console.log(newArray);
 
 // const video = ['youtube', 'vimeo', 'rutube'],
 //       blogs = ['wordpress', 'livejournal', 'blogger'],
-//       internet = [...video, ...blogs, 'vk', 'facebook'];
+//       internet = [...video, ...blogs, 'vk', 'facebook']; // разворачиваем структуру массива video, blogs и таким образом обьединяем. Сам знак троеточия расскладывает массив на отдельные строки
 // console.log(internet);
 
 // function log(a, b, c) {
@@ -172,3 +172,26 @@ console.log(...numm);
 // };
 
 // const newQ = {...q};
+
+const soldier = {
+    health: 400,
+    armor: 100,
+    sayHello: function() {
+      console.log('Say hello');
+    }
+};
+
+const john = {
+  health: 100
+};
+
+john.__proto__ = soldier; // старая запись
+Object.setPrototypeOf(john, soldier); // первый кому дать прототип, второй от кого, но правильно создавать сразу при создании Джона, пример ниже
+
+const johnn = Object.create(soldier); // создаем Джона, который будет прототипно наследоваться от солдата
+
+console.log(john);
+console.log(john.armor); // наследует от прототипа
+john.sayHello();
+
+// ООП - обьектно ориентированное прграммирование. ООП это наука о том как делать правильную архитектуру 
