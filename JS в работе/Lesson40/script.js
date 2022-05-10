@@ -1,7 +1,7 @@
 'use strict';
 
-const now = new Date();
-// const now = new Date('2022-04-23');
+const now = new Date(); // текущая дата и время
+// const now = new Date('2022-04-23'); // дата в виде строки
 // const now = new Date(2022, 4, 23);
 // const now = new Date(0);
 // const now = new Date(-999999999);
