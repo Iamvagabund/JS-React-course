@@ -8,9 +8,8 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
 window.addEventListener('DOMContentLoaded', () => {
-  var quickNotes = document.querySelector('.css-fg1f5j');
-  var quickNotes = document.querySelector('.css-abzw2p').contentDocument.querySelector('.css-fg1f5j');
-  var vmesto = document.querySelector('.css-h36ezf');
-  vmesto.append(quickNotes);
+  var quickNotes = document.querySelector('.css-xzvot2');
+  var onMain = document.querySelector('css-ta8zni');
+  onMain.append(quickNotes);
 });
 
