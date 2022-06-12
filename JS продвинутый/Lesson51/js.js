@@ -25,3 +25,4 @@ const clone = JSON.parse(JSON.stringify(persons));
 clone.parents.mom = 'Ann';
 console.log(persons);
 console.log(clone);
+
