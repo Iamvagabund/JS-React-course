@@ -24,13 +24,18 @@ window.addEventListener('DOMContentLoaded', () => {
       const request = new XMLHttpRequest();
       request.open('POST', 'server.php');
 
-      request.setRequestHeader('Content-type', 'application/json'); // если нужно в формате json передавать данные
+      request.setRequestHeader('Content-type', 'application/json'); // если нужно в формате json передавать данные. если не нужно, то строку всю убрать
       const formData = new FormData(form);
 
-      const object = {};
-      formData.forEach(function(value, key) {
-        object[key] = value;
-      })
+      // если нужно в формате json передавать данные
+      // const object = {};
+      // formData.forEach(function(value, key) {
+      //   object[key] = value;
+      // })
+
+      // const json = JSON.stringify(object);
+      // request.send(json);
+
 
       request.send(formData);
 
