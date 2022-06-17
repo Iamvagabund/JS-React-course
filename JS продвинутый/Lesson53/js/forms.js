@@ -28,13 +28,13 @@ window.addEventListener('DOMContentLoaded', () => {
       const formData = new FormData(form);
 
       // если нужно в формате json передавать данные
-      // const object = {};
-      // formData.forEach(function(value, key) {
-      //   object[key] = value;
-      // })
+      const object = {};
+      formData.forEach(function(value, key) {
+        object[key] = value;
+      })
 
-      // const json = JSON.stringify(object);
-      // request.send(json);
+      const json = JSON.stringify(object);
+      request.send(json);
 
 
       request.send(formData);
